@@ -1,0 +1,340 @@
+/* Reset Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 105vh;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #F4DBE6;
+  position: relative;
+}
+
+header .logoName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .logoName img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .logoName div {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #EF3180, #8E2853, #1E1E1E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #d81b60;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ad1457;
+}
+header nav ul li:nth-child(4) a {
+  font-weight: bold;
+}
+
+
+/* Hamburger Menu */
+header .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+header .hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: #d81b60;
+  margin: 5px 0;
+}
+
+header nav ul.active {
+  display: block;
+}
+
+/* Trip Container */
+.trip-container {
+  border: 1px solid #EF3180;
+  margin: 40px 40px 40px 100px;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 1200px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trip-container h2 {
+  color: #EF3180;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.trip-container p {
+  text-align: justify;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.trip-container img,
+.trip-container video {
+  display: block;
+  max-height: 500px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.trip-container video {
+  margin: 0 auto;
+}
+
+.trip-container blockquote {
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Adventure Sections */
+.Adventure__1,
+.Adventure__2 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.Adventure__1 img,
+.Adventure__2 img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Dubai__text1,
+.Dubai__text2 {
+  max-width: 70%;
+  text-align: center;
+}
+
+.Dubai__text1 p,
+.Dubai__text2 p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Hiking Quote */
+.hiking_quote {
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Video Container */
+.trip-container video {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  border:1px  solid #757474;
+}
+
+.experience {
+  gap: 280px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #F4DBE6;
+  color: #EF3180;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px 30px 75px;
+  flex-wrap: wrap;
+}
+
+footer .footer-left,
+footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+footer .links a {
+  text-decoration: underline;
+  color: #EF3180;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+footer .links a:hover {
+  color: #ad1457;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Header adjustments */
+   header {
+    padding: 10px;
+  }
+  .trip-container h2{
+    font-size: 24px;
+    margin: 0px 0px 20px;
+  }
+.Adventure__1, .Adventure__2 {
+    
+    align-items: center;
+}
+
+.trip-container{
+  border: 0;
+}
+  
+  .Adventure__1 img,
+  .Adventure__2 img {
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+  }
+  header .logoName {
+    margin: 10px;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  header nav ul.active {
+    display: flex;
+  }
+
+  /* Hamburger menu */
+  header .hamburger {
+    display: block;
+  }
+  .Adventure__1 img ,  .Adventure__2 img{
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .trip-container h2 {
+    font-size: 28px;
+  }
+
+  .Dubai__text1,
+  .Dubai__text2 {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .trip-container p {
+    margin: 10px; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 10px;
+  }
+
+  .hiking_quote {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  footer .footer-left,
+  footer .footer-right {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  .trip-container{
+     margin: 10px 10px 10px 10px;
+  }
+  .trip-container p{
+    margin: 0 0 20px 0;
+  }
+  .trip-container h2{
+    font-size: 24px;
+    margin: 0px 0px 20px;
+  }
+  .Adventure__1 img ,  .Adventure__2 img{
+    width: 250px;
+    margin: 0 auto;
+  }
+.Adventure__1, .Adventure__2 {
+    display: block;
+    gap: 100px;
+    align-items: center;
+}
+  .trip-container,
+  .Adventure__1 img,
+  .Adventure__2 img {
+    border-radius: 5px;
+    border: none;
+  }
+   footer{
+    gap: 10px;
+  }
+  .footer-left{
+    gap: 10px;
+
+  }
+  .footer-left .contact{
+    font-size: 10px;
+  }
+  .footer-right p{
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer-left .links a{
+    font-size: 10px;
+  }
+}

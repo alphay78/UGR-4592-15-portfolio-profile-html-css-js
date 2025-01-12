@@ -1,0 +1,282 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Scheherazade New', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #F4DBE6;
+}
+
+header .logoName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .logoName img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .logoName div {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #EF3180, #8E2853, #1E1E1E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #d81b60;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav ul li:first-child a {
+  color: #EF3180;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #ad1457;
+}
+
+/* Main Content Section */
+.homebody {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 0px 10px;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.hero_title {
+  margin-left: 100px;
+}
+
+section img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+section h1 {
+  font-size: 64px;
+  color: #d81b60;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.dubai__img {
+  justify-content: left;
+}
+
+/* Footer Section */
+footer {
+  background-color: #F4DBE6;
+  color: #EF3180;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+  flex-wrap: wrap;
+  font-size: 16px; 
+}
+
+footer .footer-left,
+footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+footer .links {
+  display: flex;
+  gap: 20px; /* Spacing between icons */
+}
+
+footer .links a {
+  color: #EF3180;
+  font-size: 16px; 
+  transition: color 0.3s;
+}
+
+footer .links a:hover {
+  color: #ad1457;
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 5px;
+  background-color: #EB468D;
+}
+
+/* General Responsive Styles for Mobile, Tablet, and Smaller Devices */
+/* Header adjustments */
+ @media (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navlist {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #F4DBE6;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navlist.active {
+    display: flex;
+  }
+
+  .homebody {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero_title {
+    margin-left: 0;
+    text-align: center;
+  }
+.experience{
+  gap: 300px;
+}
+  section img {
+    max-width: 90%;
+    width: auto;
+    height: auto;
+  }
+
+  section h1 {
+    font-size: 48px;
+  }
+
+  section p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 40px;
+  }
+
+ footer .links {
+    justify-content: center; 
+  }
+
+  footer .links a {
+    font-size: 16px; 
+  }
+} 
+
+/* iPad Portrait (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  footer {
+    padding: 20px 40px;
+  }
+}
+
+/* Mobile Landscape (481px - 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  footer .links a {
+    font-size: 16px; /* Ensure consistency */
+  }
+}
+
+/* Mobile Portrait (320px - 480px) */
+@media (max-width: 480px) {
+
+  header .hamburger{
+    max-width: 400px;
+  }
+  section h1 {
+    font-size: 36px;
+  }
+  footer{
+    gap: 10px;
+  }
+  .footer-left{
+    gap: 10px;
+
+  }
+  .footer-left .contact{
+    font-size: 10px;
+  }
+  .footer-right p{
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer-left .links a{
+    font-size: 10px;
+  }
+}
