@@ -1,0 +1,399 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Body Styling */
+body {
+  font-family: 'Scheherazade New', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 105vh;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #F4DBE6;
+}
+
+header .logoName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .logoName img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .logoName div {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #EF3180, #8E2853, #1E1E1E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #d81b60;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ad1457;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 5px;
+  background-color: #EB468D;
+}
+
+
+.Icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  margin: 20px auto; 
+}
+.Icons i {
+  font-size: 64px;
+  color: #EF3180;
+  transition: transform 0.3s;
+}
+.Icons i:hover {
+  transform: scale(1.1); 
+}
+
+ .para{
+  max-width: 500px;
+
+} 
+
+ section h2 {
+  font-size: 48px; 
+  color: #EF3180;  
+  margin-bottom: 20px;
+  
+}
+
+nav ul li:nth-child(5) a {
+  color: #EF3180;
+  font-weight: bold; 
+}
+
+nav ul li a:hover {
+  color: #ad1457;
+}  
+
+
+/* Contact Section */
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  text-align: center;
+}
+
+ .contact-form {
+  width: 35%;
+  padding: 50px ;
+  border: 1px solid #EF3180; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 30px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#email {
+  border-radius:12px ;
+  width: 90%;
+}
+#name{
+  border-radius:8px ;
+  width: 90%;
+}
+.contact-form input, 
+.contact-form textarea {
+  border-radius: 15px;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  font-size: 10px;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #EF3180;
+  box-shadow: 0 0 5px rgba(239, 49, 128, 0.5);
+}
+
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #EF3180;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.contact-form button:hover {
+  background-color: #ad1457;
+  
+}
+
+.contact-container{
+  display: flex;
+  gap: 200px;
+} 
+.submit{
+  margin-top: 30px;
+  justify-content: center;
+}
+/* Footer Section */
+footer {
+  background-color: #F4DBE6;
+  color: #EF3180;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+  flex-wrap: wrap;
+  font-size: 16px; 
+}
+
+footer .footer-left,
+footer .footer-right footer .footer-right .contact {
+  display: flex;
+  align-items: center;
+   font-size: 14px; 
+}
+
+footer .links {
+  display: flex;
+  gap: 20px; 
+}
+
+footer .links a {
+  color: #EF3180;
+  font-size: 16px; 
+  transition: color 0.3s;
+}
+
+footer .links a:hover {
+  color: #ad1457;
+}
+
+
+/* Header adjustments */
+ @media (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navlist {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #F4DBE6;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navlist.active {
+    display: flex;
+  }
+
+  .homebody {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero_title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  section img {
+    max-width: 90%;
+    width: auto;
+    height: auto;
+  }
+
+  section h1 {
+    font-size: 48px;
+  }
+
+  section p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 40px;
+  }
+
+ footer .links a {
+    justify-content: center; 
+    font-size: 12px;
+  }
+
+} 
+/* iPad Portrait (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 20px 40px;
+  }
+  .contact-container{
+      gap: 10px;
+  }
+ form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form textarea {
+    width: 280px; 
+    font-size: 12px; 
+  }
+ 
+}
+
+
+/* Mobile Landscape (481px - 768px) */
+@media (max-width: 768px) {
+  
+  .Icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .contact-container {
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: center;
+     gap: 0px;
+  }
+
+  .contact-form {
+    width: 70%;
+    padding: 20px;
+    margin: 10px 40px 40px 40px;
+  }
+
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  footer .links {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+
+@media (max-width: 480px) {
+ .Icons {
+  display: none;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+     gap: 0px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 40px;
+  }
+}
+
+  footer .footer-left,
+  footer .footer-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+  }
+
+  .footer .footer-left .links a{
+  font-size: 12px;
+  }
+
+  footer .contact p {
+    font-size: 16px;
+  }
+  
+  section h2 {
+    font-size: 24px;
+  }
+
+  section p {
+    font-size: 14px;
+  }

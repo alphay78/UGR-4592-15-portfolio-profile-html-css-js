@@ -1,0 +1,377 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Scheherazade New', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #F4DBE6;
+  position: relative;
+}
+
+header .logoName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .logoName img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .logoName div {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #EF3180, #8E2853, #1E1E1E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #d81b60;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+
+header nav ul li a:hover {
+  color: #ad1457;
+}
+header nav ul li:nth-child(3) a {
+  font-weight: bold;
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #d81b60;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+nav.active {
+  display: flex;
+}
+
+/* Main Content */
+main section {
+  padding: 20px;
+  margin: 10px 20px 10px 60px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Style for the descriptions */
+p.description__1, p.description__2, p.description__3, p.description__4 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.title__1, .title__2, .title__3, .title__4, .title__5 {
+  color: #EF3180;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+}
+
+/* Quote Section */
+.Quote {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px 20px 10px 60px;
+}
+
+.courses ul li {
+  margin: 0px 20px 20px 60px;
+}
+/* General Styles for Table */
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table-wrapper {
+    display: block; 
+  }
+
+  table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #F4DBE6;
+    z-index: 1; 
+  }
+
+
+/* Table Header Styling */
+table thead {
+  color: #EF3180;
+}
+
+/* Table Cell Styling */
+table th, table td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* Table Wrapper Centering */
+.table-wrapper {
+  width: 80%;       
+  margin: 0 auto;   
+  overflow-x: auto;  
+}
+
+
+/* Make the video container responsive */
+.video .media .video-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 56.25%; 
+  height: 0;
+  overflow: hidden;
+}
+
+.video .media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Footer Section */
+footer {
+  background-color: #F4DBE6;
+  color: #EF3180;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  flex-wrap: wrap;
+}
+
+footer .footer-left,
+footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+footer .links a {
+  text-decoration: underline;
+  color: #EF3180;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+footer .links a:hover {
+  color: #ad1457;
+}
+
+@media (max-width: 1024px) {
+  /* Header adjustments */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navlist {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #F4DBE6;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navlist.active {
+    display: flex;
+  }
+
+  .homebody {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero_title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  section img {
+    max-width: 90%;
+    width: auto;
+    height: auto;
+  }
+
+  section h1 {
+    font-size: 48px;
+  }
+
+  section p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 40px;
+  }
+
+ footer .links {
+    justify-content: center; 
+  }
+
+  footer .links a {
+    font-size: 16px; 
+  }
+}
+  @media (max-width: 768px) {
+  .table-wrapper {
+    display: block; 
+  }
+
+
+  table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #F4DBE6;
+    z-index: 1; 
+  }
+
+  table th, table td {
+    font-size: 14px; 
+}
+/* Mobile Portrait (320px - 480px) */
+@media (max-width: 480px) {
+main section{
+  margin: 0;
+  padding: 0;
+}
+.title__1 h2,.title__2 h2,.title__3 h2, .title__5 h2{
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+ .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+    width: 80%;
+    margin: 20px auto;
+    padding: 0; 
+  }
+  .table-wrapper h2{
+    font-size: 24px;
+  }
+  .Quote{
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  table {
+   margin: 20px;
+    display: block; 
+    table-layout: fixed; 
+  }
+
+  table th, table td {
+    font-size: 12px; 
+    padding: 8px; 
+    word-wrap: break-word; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+  table th {
+    background-color: #F4DBE6; 
+  }
+
+  footer{
+    gap: 10px;
+  }
+  .footer-left{
+    gap: 10px;
+
+  }
+  .footer-left .contact{
+    font-size: 10px;
+  }
+  .footer-right p{
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer-left .links a{
+    font-size: 10px;
+  }
+}
+  }

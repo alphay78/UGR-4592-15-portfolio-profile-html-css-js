@@ -4,78 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Adventures</title>
+    <link rel="stylesheet" href="./CSS/adventure.css">
+
 </head>
 <body>
+  <!-- Header Section -->
+  <header>
+    <div class="logoName">
+      <img src="./images/logo.png" alt="Alpha Logo">
+      <div>Alpha</div>
+    </div>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
-    <!-- Header Section: Contains the logo and navigation links -->
-    <header>
-        <div>
-            <!-- Logo Image -->
-            <img src="./images/logo.png" alt="Logo"> 
-            <h1>Alpha</h1>
-        </div>
-        <nav>
-            <ul>
-                <!-- Navigation Links -->
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./education.html">Education</a></li>
-                <li><a href="./adventure.html">Adventure</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <div class="navlist">
+        <ul>
+           <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./education.html">Education</a></li>
+                    <li><a href="./adventure.html">Adventure</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
 
     <!-- Dubai Trip Section -->
-    <section>
+    <div class="trip-container">
         <h2>My Trip to Dubai</h2>
-        <p>
-            Dubai was an unforgettable experience filled with breathtaking skyscrapers, luxurious shopping malls, and mesmerizing desert landscapes. From the iconic Burj Khalifa to the golden sands of the desert, every moment was a new adventure.
+        <div class="Adventure__1">
+        <img src="./images/DubaiTrip.jpg" alt="Trip to Dubai" class="dubai__img">
+        <p class="Dubai__text1">
+            Dubai was an unforgettable experience filled with breathtaking skyscrapers, luxurious shopping malls, and mesmerizing desert landscapes. From the iconic Burj Khalifa, the tallest structure in the world, to the golden sands of the desert where thrilling dune bashing adventures await, every moment was a new adventure.
+
+Exploring the Dubai Mall, with its incredible array of high-end brands, restaurants, and the spectacular indoor aquarium, was like stepping into a shopper’s paradise. The Palm Jumeirah, a marvel of modern engineering, offered a tranquil escape with its pristine beaches and world-class resorts.
+
+Evenings in Dubai were magical, with the stunning Dubai Fountain show lighting up the skyline in a symphony of water, music, and lights. A visit to the traditional souks, like the Gold Souk and Spice Souk, gave a glimpse into the city's rich heritage and vibrant culture.
+
+The highlight was an enchanting desert safari, where the sunset painted the dunes in shades of orange and red. Enjoying a traditional Bedouin-style dinner under a starlit sky, accompanied by captivating performances, was an experience to cherish forever.
+
+Dubai seamlessly blends futuristic ambition with cultural charm, making it a destination that promises unforgettable memories at every turn.
+
+
         </p>
-
-        <img src="./images/DubaiTrip.jpg" alt="Trip to Dubai">
-
+        </div>
+        <div class="dubai__quote">
         <blockquote>
             "Traveling leaves you speechless, then turns you into a storyteller." – Ibn Battuta
         </blockquote>
+        </div>
 
         <video controls>
             <source src="./videos/Dubai.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </section>
+    </div>
 
     <!-- Botanical Park Hiking Section -->
-    <section>
+    <div class="trip-container">
         <h2>Botanical Park Hiking</h2>
-        <p>
-            Hiking through the Botanical Park was an incredible journey through lush greenery and diverse plant life. The peace and beauty of nature, combined with the fresh air and scenic views, made it the perfect escape from the hustle and bustle of everyday life.
-        </p>
-        <img src="./images/HikingTrip.jpg" alt="Botanical Park Hiking">
+        <div class="Adventure__2">
+         <img src="./images/HikingTrip.jpg" alt="Botanical Park Hiking">
+        <p class="Dubai__text2">
+           Hiking through the Botanical Park was an incredible journey into a vibrant world of lush greenery and diverse plant life. The serene pathways were lined with towering trees, colorful blossoms, and exotic flora, offering a feast for the senses. The gentle rustle of leaves in the breeze and the chirping of birds created a symphony of nature that was both calming and rejuvenating.
 
+As I explored deeper into the park, the sight of sparkling streams and small, cascading waterfalls added a touch of magic to the experience. Every turn revealed something new – a hidden grove, a unique plant species, or a picturesque spot perfect for reflection.
+
+The peace and beauty of nature, combined with the crisp, fresh air and panoramic scenic views, made it the ideal escape from the hustle and bustle of everyday life. The highlight of the hike was reaching the park’s observation point, which offered a breathtaking view of the surrounding landscapes, stretching as far as the eye could see.
+
+        </p>
+      
+        </div>
+<div class="hiking_quote">
         <blockquote>
             "In every walk with nature, one receives far more than he seeks." – John Muir
         </blockquote>
-
+</div>
         <video controls>
             <source src="./videos/Hiking.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </section>
+    </div>
 
-    <!-- Footer Section: Contains copyright and social media links -->
-    <footer>
-        <div>
-
-            <p>&copy; 2024 Alpha. All rights reserved.</p>
-            
-            <div>
-                <a href="https://www.linkedin.com/in/alpha-israel-023197294/">LinkedIn</a>
-                <a href="https://github.com/alphay78">GitHub</a>
-                <a href="https://www.instagram.com/alphahermosa/">Instagram</a>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Footer Section -->
+  <footer>
+    <div class="footer-left">
+      <div class="contact">
+        <p>Contact me :</p>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/alpha-israel-023197294/" target="_blank">LinkedIn |</a>
+        <a href="https://github.com/alphay78" target="_blank">Github |</a>
+        <a href="@HolisticDeveloper" target="_blank">Telegram</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p>&copy; 2024 Alpha Degago. All Rights Reserved.</p>
+    </div>
+  </footer>
+<script src="./Javascript/adventure.js"></script>
 </body>
 </html>

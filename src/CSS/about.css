@@ -1,0 +1,505 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Scheherazade New', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #F4DBE6;
+}
+
+header .logoName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .logoName img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .logoName div {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #EF3180, #8E2853, #1E1E1E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #d81b60;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav ul li:first-child a {
+  color: #EF3180;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #ad1457;
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 5px;
+  background-color: #EB468D;
+}
+
+/* Main Content Section */
+.homebody {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 0;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.hero_title {
+  margin-left: 100px;
+}
+
+.title1, .title2 {
+  color: #d81b60;
+}
+
+/* General Styles for Main Content */
+main {
+  padding-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* About Section */
+.about-content h1 {
+  font-size: 36px;
+  color: #d81b60;
+  margin-bottom: 30px;
+  margin: 0 0 30px 90px;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+}
+
+.profile-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 0 50px 100px;
+}
+
+.profile-description {
+  margin: 20px 90px;
+  flex: 1;
+  text-align: justify;
+  text-align-last: center;
+  width: 80%;
+}
+
+.profile-description p {
+  font-size: 16px;
+  margin: 0 auto 10px;
+  width: 100%;
+}
+
+.audioLen {
+  width: 80%;
+}
+
+/* Skills Section */
+section h2 {
+  font-size: 24px;
+  color: #d81b60;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+section ul {
+  list-style: disc;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Experiences Section */
+.experience {
+  display: flex;
+  gap: 250px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.courseList {
+  margin-left: 60px;
+}
+
+section ol {
+  margin-left: 40px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+section ol h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+section ol p {
+  margin-bottom: 15px;
+}
+
+/* Media Section */
+.media, .media-audio {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.media video {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.media-audio h3 {
+  font-size: 30px;
+  color: #d81b60;
+  margin: 40px;
+}
+
+audio {
+  max-width: 80%;
+}
+
+/* Focus Areas Table Section */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 50px 20px 80px 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table thead th {
+  padding: 15px;
+  font-size: 18px;
+  color: #d81b60;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+table tbody td {
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+
+/* Footer Section */
+footer {
+  background-color: #F4DBE6;
+  color: #EF3180;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+footer .footer-left, footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+footer .links {
+  display: flex;
+  gap: 20px;
+}
+
+footer .links a {
+  color: #EF3180;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+footer .links a:hover {
+  color: #ad1457;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+ audio #favouriteSong{
+  width: 80%;
+ }
+  .experience {
+    gap: 10;
+  }
+
+  .navlist.active {
+    display: flex;
+  }
+
+  .homebody {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero_title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .profile-container {
+    gap: 40px;
+  }
+
+  .profile-img {
+    width: 300px;
+  }
+
+  .profile-description {
+    margin: 70px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 40px;
+  }
+
+  footer .links {
+    justify-content: center;
+  }
+
+  footer .links a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  header .logoName {
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .homebody, .hero_title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .profile-container {
+    gap: 20px;
+  }
+
+  .profile-img {
+    max-width: 400px;
+  }
+
+  .profile-description {
+    margin: 20px;
+    width: 100%;
+  }
+
+  .profile-description p {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  section h1 {
+    font-size: 28px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  .profile-img {
+    width: 200px;
+    margin: 0 10px;
+  }
+
+  table {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+
+  table thead th, table tbody td {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .experience {
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 40px;
+  }
+
+  footer .links {
+    justify-content: center;
+  }
+
+  footer .links a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .profile-description p {
+    font-size: 14px;
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto !important;
+  }
+
+  .profile-img {
+    width: 200px;
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .profile-container {
+    display: block;
+  }
+
+  .about-content h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .experience {
+    display: block;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
+
+  .media-audio h3 {
+    font-size: 20px;
+  }
+
+  #courseList {
+    margin: 30px;
+  }
+
+  section ol h3 {
+    font-size: 14px;
+  }
+
+  table {
+    width: 90%;
+    justify-content: center;
+    overflow-x: auto;
+    display: block;
+    margin: 20px;
+  }
+
+  table thead th {
+    font-size: 8px;
+  }
+
+  table tbody td, table tbody th {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  table tbody td {
+    word-wrap: break-word;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer .footer-left, footer .footer-right {
+    gap: 10px;
+    font-size: 10px;
+  }
+
+  footer .footer-left .links a {
+    font-size: 10px;
+  }
+}  
